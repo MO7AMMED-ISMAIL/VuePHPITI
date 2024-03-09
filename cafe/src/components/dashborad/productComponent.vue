@@ -9,7 +9,6 @@
                         <th>Category</th>
                         <th>Price</th>
                         <th>image</th>
-                        <th>category_id</th>
                         <th>Avaliable</th>
                         <th>Control</th>
                     </tr>
@@ -18,13 +17,12 @@
                     <tr v-for="(product, rowIndex) in products" :key="rowIndex">
                         <td>{{++rowIndex}}</td>
                         <td>{{product.name}}</td>
-                        <td>{{product.category}}</td>
+                        <td>{{product.category_id}}</td>
                         <td>{{product.price}}</td>
                         <td>{{product.image}}</td>
-                        <td>{{product.category_id}}</td>
-                        <td>{{product.avaliable}}</td>
+                        <td>{{product.available}}</td>
                         <td>
-                            <button class="btn btn-primary">Edit</button>
+                            <button class="btn btn-primary m-1">Edit</button>
                             <button class="btn btn-danger">Delete</button>
                         </td>
                     </tr>
