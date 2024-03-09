@@ -50,5 +50,6 @@ function setHeaderAndStatus($statusCode, $statusMessage = null)
     header('HTTP/1.1 ' . "$statusCode");
     if ($statusMessage !== null) {
         echo json_encode(array("status" => $statusMessage));
+        exit;
     }
 }
